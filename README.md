@@ -15,7 +15,9 @@ https://h3a9by6n0a.execute-api.us-east-1.amazonaws.com/tasks
 
 **Manipulação de tarefa:**
 
+```
 curl -X POST -H "Content-Type: application/json" -d '{"title":"Teste","description":"Criado pelo curl","date":"2025-12-03"}' https://h3a9by6n0a.execute-api.us-east-1.amazonaws.com/tasks
+```
 
 Obs: 
 1) "title":"Teste","description":"Criado pelo curl","date":"2025-12-03" representa o conteúdo passado
@@ -24,11 +26,16 @@ Obs:
 4) -d é o parâmetro do conteúdo que está sendo enviado
 
 **Listar todas as tarefas:**
+```
 curl https://h3a9by6n0a.execute-api.us-east-1.amazonaws.com/tasks
+```
 
 **Filtrar por data:**
+```
 curl https://h3a9by6n0a.execute-api.us-east-1.amazonaws.com/tasks/date/2025-12-03
+```
 
 **GET por ID:**
+```
 curl https://h3a9by6n0a.execute-api.us-east-1.amazonaws.com/tasks/{ID_AQUI}
-
+```
