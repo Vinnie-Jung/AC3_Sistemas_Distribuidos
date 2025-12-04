@@ -14,6 +14,7 @@ Rotas:
 https://h3a9by6n0a.execute-api.us-east-1.amazonaws.com/tasks
 
 **Manipulação de tarefa:**
+
 curl -X POST \
   -H "Content-Type: application/json" \
   -d '{"title":"Teste","description":"Criado pelo curl","date":"2025-12-03"}' \
