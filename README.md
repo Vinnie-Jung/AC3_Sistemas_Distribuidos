@@ -15,13 +15,10 @@ https://h3a9by6n0a.execute-api.us-east-1.amazonaws.com/tasks
 
 **Manipulação de tarefa:**
 
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -d '{"title":"Teste","description":"Criado pelo curl","date":"2025-12-03"}' \
-  https://h3a9by6n0a.execute-api.us-east-1.amazonaws.com/tasks
+curl -X POST -H "Content-Type: application/json" -d '{"title":"Teste","description":"Criado pelo curl","date":"2025-12-03"}' https://h3a9by6n0a.execute-api.us-east-1.amazonaws.com/tasks
 
 Obs: 
-1) "\" é apenas uma quebra de linha no terminal (não é necessária)
+1) "title":"Teste","description":"Criado pelo curl","date":"2025-12-03" representa o conteúdo passado
 2) -X é o parâmetro que determina o método HTTP (Ex: GET, POST, PUT, DELETE)
 3) -H é o parâmetro de header, especificando o formato json
 4) -d é o parâmetro do conteúdo que está sendo enviado
